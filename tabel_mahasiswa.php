@@ -87,7 +87,8 @@ include_once('config.php');
         mysqli_query($conn, "delete from tabel_mahasiswa where id ='$_GET[id]'");
 
 
-        echo "<meta http-equev=refresh content=2;URL= 'tabel_mahasiswa.php'>";
+        echo "<a style='margin-left:20px'>Berhasil di Delete, Silahkan di Refresh</a>";
+        echo "<a style='margin-left:20px' href ='tabel_mahasiswa.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>";
     }
 
     ?>
@@ -130,7 +131,7 @@ include_once('config.php');
         Nim = '$_POST[Nim]',
         Jurusan = '$_POST[Jurusan]' ");
 
-        echo "<a style='margin-left:20px'>Berhasil di Tamba, Silahkan di Refresh</a>";
+        echo "<a style='margin-left:20px'>Berhasil di Tambah, Silahkan di Refresh</a>";
         echo "<a style='margin-left:20px' href ='tabel_mahasiswa.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>";
     }
 
